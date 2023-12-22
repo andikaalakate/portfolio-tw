@@ -20,7 +20,7 @@ Hamburger.addEventListener('click', function(){
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-    const texts = ['Programmer.', 'Web Developer.', 'Game Develeper.', 'Photographer'];
+    const texts = ['Programmer.', 'Web Developer.', 'Game Developer.', 'Photographer'];
     let count = 0;
     let index = 0;
     let currentText = '';
