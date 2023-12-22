@@ -1,4 +1,3 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./public/**/*.{html,js}", "./src/**/*.{html,js}"],
   theme: {
@@ -7,6 +6,9 @@ module.exports = {
       padding: '16px',
     },
     extend: {
+      animation: {
+        'fadeInOut': 'fadeInOut 3s linear infinite',
+      },
       colors: {
         primary: '#026885',
         dark: '#0f172a',
@@ -28,6 +30,14 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  keyframes: {
+    fadeInOut: {
+      '0%': { opacity: '0' },
+      '50%': { opacity: '1' },
+      '100%': { opacity: '0' },
+    }
+  },
+  plugins: [
+    require('tailwind-scrollbar'),
+  ],
 }
-

@@ -12,19 +12,19 @@
         href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600;700&family=Fira+Mono:wght@400;500;700&family=Fira+Sans:wght@400;600;700&family=Poppins:wght@300;400;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="../dist/plugin/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="../dist/css/style.css">
-    <script src="../dist/js/script.js"></script>
     <link rel="stylesheet" href="../node_modules/aos/dist/aos.css">
     <script src="../node_modules/aos/dist/aos.js"></script>
 </head>
 
-<body class="font-poppins">
+<body class="font-poppins scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-10">
     <!-- Header Section start -->
     <header class="absolute top-0 left-0 w-full flex items-center">
         <div class="container px-4">
             <div class="flex items-center justify-between relative">
-                <div class="px-4">
-                    <a href="#home" class="font-bold text-lg text-primary block py-5">Andika Alakate</a>
+                <div class="px-4 animate__animated animate__slideInLeft">
+                    <a href="#home" class="font-bold text-lg text-primary block py-5 ">Andika Alakate</a>
                 </div>
                 <div class="flex items-center px-4">
                     <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
@@ -34,7 +34,7 @@
                     </button>
 
                     <nav id="nav-menu"
-                        class="hidden lg:block lg:static lg:bg-transparent lg:max-w-full absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:shadow-none lg:rounded-none lg:right-0 transition-all duration-500 ease-in-out">
+                        class="hidden lg:block lg:static lg:bg-transparent lg:max-w-full absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:shadow-none lg:rounded-none lg:right-0 transition-all duration-500 ease-in-out z-[9999]">
                         <ul class="block lg:flex">
                             <li class="group">
                                 <a href="#home"
@@ -69,20 +69,19 @@
     <!-- Header Section end -->
 
     <!-- Hero Section start -->
-    <section id="home" class="pt-36 px-2 items-center">
+    <section id="home" class="pt-24 px-2 items-center">
         <div class="container rounded-t-lg shadow-lg bg-gradient-to-br from-secondary to-primary mini:min-h-screen hp:min-h-0">
             <div class="flex flex-wrap">
                 <div class="w-full self-center p-4 sm:w-1/2 sm:pb-8 mini:pb-4 hp:w-full">
-                    <h1 class="text-base font-semibold text-primary md:text-xl hp:text-lg">Halo Semua 👋🏻, saya <span
-                            class="font-bold block text-dark_sec mt-1 sm:text-4xl hp:text-3xl mini:text-2xl font-firaSans selection:bg-secondary selection:text-slate-300 selection:underline">Andika
+                    <h1 class="text-base font-semibold text-dark md:text-xl hp:text-lg"><span class="text-transparent font-bold bg-gradient-to-br from-blue-400 to-green-300 bg-clip-text">Halo Semua <span class="text-opacity-100 font-bold text-white">👋🏻</span>, saya</span> <span
+                            class="font-bold block mt-1 sm:text-4xl hp:text-3xl mini:text-3xl font-firaSans selection:bg-secondary selection:text-slate-300 selection:underline animate__animated animate__zoomInRight text-transparent bg-gradient-to-br from-slate-400 to-slate-50 bg-clip-text hover:scale-105 transition duration-500" id="animatedText">Andika
                             Alakate</span></h1>
-                    <h2 class="font-medium text-dark_sec text-lg mb-5 lg:text-2xl font-firaCode">Web Developer & Content
-                        Creator</h2>
-                    <p class="font-medium text-slate-400 mb-10 leading-relaxed font-firaMono mix-blend-d"><span
-                            class="font-bold text-slate-300">Knowledge</span> can change one's destiny, and <span
+                    <h2 class="font-medium text-dark_sec text-lg mb-5 lg:text-2xl font-firaCode"><span class="sec-text"></span></h2>
+                    <p class="font-medium text-slate-400 mb-10 leading-relaxed font-firaMono mix-blend-d hover:scale-105 transition duration-500 active:underline"><span
+                            class="font-bold text-slate-300 selection:underline">Knowledge</span> can change one's destiny, and <span
                             class="font-bold text-slate-300">diligence</span> will result in glory.</p>
 
-                    <a href="#"
+                    <a href="#contact"
                         class="text-sm font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-75 transition-all duration-500 ease-in-out mini:py-2 mini:px-5 self-start">Hubungi
                         Saya</a>
                 </div>
@@ -90,7 +89,7 @@
                 <div class="w-full self-center px-2 sm:w-1/2 hp:w-full">
                     <div class="mt-6 lg:mt-0 xl:-right-24 sm:pb-4 lg:self-end">
                         <img src="../assets/img/andika-alakate-3.webp" alt="Andika Alakate"
-                            class="max-w-full rounded-3xl mx-auto drop-shadow-xl lg:max-w-sm xl:-right-24 lg:relative">
+                            class="max-w-full rounded-3xl mx-auto drop-shadow-xl lg:max-w-sm xl:-right-24 relative">
                     </div>
                 </div>
             </div>
@@ -273,10 +272,22 @@
             <div class="flex p-4 flex-wrap mx-auto flex-1 gap-6 justify-center">
                 <div class="max-w-full sm:w-full md:max-w-2xl lg:max-w-md xl:w-1/4 bg-white shadow-lg rounded-xl" data-aos="fade-up" data-aos-anchor-placement="top-center">
                     <div class="rounded-t-xl shadow-md overflow-hidden">
-                        <img src="../assets/img/portfolio/pfl-1.webp" alt="Admin Dashboard" width="w-full" />
+                        <img src="../assets/img/blog/1311353-min.webp" alt="Oshi no Ko" width="w-full" />
                     </div>
                     <div class="w-full py-8 px-6">
-                        <h3 class="font-semibold text-xl mb-3">Admin Dashboard - Andika Alakate</h3>
+                        <h3 class="font-semibold text-xl mb-3">Oshi no Ko</h3>
+                        <p class="font-medium text-base text-dark_sec pb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore dolor odio, animi quidem nesciunt iure tenetur ipsum illum nulla similique inventore autem cumque rerum. Dicta.</p>
+                        <a href="#"
+                            class="text-sm font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-75 transition-all duration-500 ease-in-out mini:py-2 mini:px-5 self-start hover:underline">Baca
+                            Selengkapnya ...</a>
+                    </div>
+                </div>
+                <div class="max-w-full sm:w-full md:max-w-2xl lg:max-w-md xl:w-1/4 bg-white shadow-lg rounded-xl" data-aos="fade-up" data-aos-anchor-placement="top-center">
+                    <div class="rounded-t-xl shadow-md overflow-hidden">
+                        <img src="../assets/img/blog/B200207-Cover-Rekomendasi-PC-Gaming-7-Jutaan-scaled.jpg" alt="PC" width="w-full" />
+                    </div>
+                    <div class="w-full py-8 px-6">
+                        <h3 class="font-semibold text-xl mb-3">Rekomendasi PC Gaming</h3>
                         <p class="font-medium text-base text-dark_sec pb-4">Lorem ipsum dolor sit amet consectetur
                             adipisicing elit.
                             Sapiente sunt excepturi, eveniet debitis aliquam sint.</p>
@@ -287,10 +298,10 @@
                 </div>
                 <div class="max-w-full sm:w-full md:max-w-2xl lg:max-w-md xl:w-1/4 bg-white shadow-lg rounded-xl" data-aos="fade-up" data-aos-anchor-placement="top-center">
                     <div class="rounded-t-xl shadow-md overflow-hidden">
-                        <img src="../assets/img/portfolio/pfl-1.webp" alt="Admin Dashboard" width="w-full" />
+                        <img src="../assets/img/blog/KGHEQUdX_2x.webp" alt="AI" width="w-full" />
                     </div>
                     <div class="w-full py-8 px-6">
-                        <h3 class="font-semibold text-xl mb-3">Admin Dashboard - Andika Alakate</h3>
+                        <h3 class="font-semibold text-xl mb-3">Apakah AI Akan Menggantikan Pekerjaan Manusia?</h3>
                         <p class="font-medium text-base text-dark_sec pb-4">Lorem ipsum dolor sit amet consectetur
                             adipisicing elit.
                             Sapiente sunt excepturi, eveniet debitis aliquam sint.</p>
@@ -301,10 +312,10 @@
                 </div>
                 <div class="max-w-full sm:w-full md:max-w-2xl lg:max-w-md xl:w-1/4 bg-white shadow-lg rounded-xl" data-aos="fade-up" data-aos-anchor-placement="top-center">
                     <div class="rounded-t-xl shadow-md overflow-hidden">
-                        <img src="../assets/img/portfolio/pfl-1.webp" alt="Admin Dashboard" width="w-full" />
+                        <img src="../assets/img/blog/PAFzeYNp_4x.webp" alt="AI" width="w-full" />
                     </div>
                     <div class="w-full py-8 px-6">
-                        <h3 class="font-semibold text-xl mb-3">Admin Dashboard - Andika Alakate</h3>
+                        <h3 class="font-semibold text-xl mb-3">Kemajuan Teknologi Yang Sangat Pesat</h3>
                         <p class="font-medium text-base text-dark_sec pb-4">Lorem ipsum dolor sit amet consectetur
                             adipisicing elit.
                             Sapiente sunt excepturi, eveniet debitis aliquam sint.</p>
@@ -315,24 +326,10 @@
                 </div>
                 <div class="max-w-full sm:w-full md:max-w-2xl lg:max-w-md xl:w-1/4 bg-white shadow-lg rounded-xl" data-aos="fade-up" data-aos-anchor-placement="top-center">
                     <div class="rounded-t-xl shadow-md overflow-hidden">
-                        <img src="../assets/img/portfolio/pfl-1.webp" alt="Admin Dashboard" width="w-full" />
+                        <img src="../assets/img/blog/vXiqSDlI_4x.webp" alt="Anime" width="w-full" />
                     </div>
                     <div class="w-full py-8 px-6">
-                        <h3 class="font-semibold text-xl mb-3">Admin Dashboard - Andika Alakate</h3>
-                        <p class="font-medium text-base text-dark_sec pb-4">Lorem ipsum dolor sit amet consectetur
-                            adipisicing elit.
-                            Sapiente sunt excepturi, eveniet debitis aliquam sint.</p>
-                        <a href="#"
-                            class="text-sm font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-75 transition-all duration-500 ease-in-out mini:py-2 mini:px-5 self-start hover:underline">Baca
-                            Selengkapnya ...</a>
-                    </div>
-                </div>
-                <div class="max-w-full sm:w-full md:max-w-2xl lg:max-w-md xl:w-1/4 bg-white shadow-lg rounded-xl" data-aos="fade-up" data-aos-anchor-placement="top-center">
-                    <div class="rounded-t-xl shadow-md overflow-hidden">
-                        <img src="../assets/img/portfolio/pfl-1.webp" alt="Admin Dashboard" width="w-full" />
-                    </div>
-                    <div class="w-full py-8 px-6">
-                        <h3 class="font-semibold text-xl mb-3">Admin Dashboard - Andika Alakate</h3>
+                        <h3 class="font-semibold text-xl mb-3">Pemabahsan Mengenai Karakter Killua</h3>
                         <p class="font-medium text-base text-dark_sec pb-4">Lorem ipsum dolor sit amet consectetur
                             adipisicing elit.
                             Sapiente sunt excepturi, eveniet debitis aliquam sint.</p>
@@ -348,9 +345,9 @@
 
     <!-- Contact Section start -->
     <section id="contact" class="px-1">
-        <div class="container shadow-lg bg-white py-16">
+        <div class="container shadow-lg bg-white py-16 animate__animated animate__fadeInUp">
             <div class="w-full px-4 pb-4">
-                <div class="max-w-5xl mx-auto text-center pt-8">
+                <div class="max-w-5xl mx-auto text-center pt-8 animate__animated animate__fadeInUp">
                     <h4 class="font-semibold text-lg text-primary mb-2">Kontak</h4>
                     <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">Hubungi Kami</h2>
                     <p class="font-medium text-md text-dark_sec md:text-lg">Lorem ipsum dolor sit amet consectetur
@@ -363,25 +360,25 @@
             <form>
                 <div class="w-full lg:w-2/3 lg:mx-auto">
                     <div class="w-full px-4 pb-8">
-                        <label for="name" class="text-base font-bold text-primary">Nama</label>
+                        <label for="name" class="text-base font-bold text-primary animate__animated animate__slideInDown">Nama</label>
                         <input type="text" id="name"
-                            class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary">
+                            class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary animate__animated animate__slideInRight">
                     </div>
                     <div class="w-full px-4 pb-8">
-                        <label for="email" class="text-base font-bold text-primary">Email</label>
+                        <label for="email" class="text-base font-bold text-primary animate__animated animate__slideInDown">Email</label>
                         <input type="email" id="email"
-                            class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary">
+                            class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary animate__animated animate__slideInRight">
                     </div>
                     <div class="w-full px-4 pb-4">
-                        <label for="pesan" class="text-base font-bold text-primary">Pesan</label>
+                        <label for="pesan" class="text-base font-bold text-primary animate__animated animate__slideInDown">Pesan</label>
                         <textarea id="pesan"
-                            class="w-full bg-slate-200 text-dark rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-32">
+                            class="w-full bg-slate-200 text-dark rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-32 animate__animated animate__slideInRight">
                         </textarea>
                     </div>
                     <div class="w-full px-4 pb-8">
                         <button
-                            class="text-sm font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-75 transition-all duration-500 ease-in-out mini:py-2 mini:px-5">
-                            Hubungi Saya
+                            class="text-sm font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-75 transition-all duration-500 ease-in-out mini:py-2 mini:px-5 animate__animated animate__slideInDown">
+                            Kirim
                         </button>
                     </div>
                 </div>
@@ -391,9 +388,9 @@
     <!-- Contact Section end -->
 
     <!-- Footer start -->
-    <footer class="px-1 pb-6">
-        <div class="container shadow-xl bg-dark rounded-b-xl">
-            <div class="flex flex-wrap max-w-5xl mx-auto pt-16">
+    <footer class="px-1 pb-4">
+        <div class="container shadow-xl bg-dark rounded-b-xl animate__animated animate__slideInUp">
+            <div class="flex flex-wrap max-w-5xl mx-auto pt-16 animate__animated animate__slideInUp">
                 <div class="w-full p-4 mb-6 sm:w-1/2 md:w-1/3 text-slate-300 font-medium">
                     <h2 class="font-bold text-4xl text-white mb-5">ALAKATE</h2>
                     <h3 class="font-bold text-2xl text-white mb-2">Hubungi Kami</h3>
@@ -479,6 +476,7 @@
     </footer>
     <!-- Footer end -->
 
+    <script src="../dist/js/script.js"></script>
     <script>
         AOS.init({
             duration: 1000
