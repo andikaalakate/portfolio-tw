@@ -617,6 +617,14 @@ video {
   }
 }
 
+.visible {
+  visibility: visible;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
 .absolute {
   position: absolute;
 }
@@ -1489,6 +1497,14 @@ html::selection {
 }
 
 @media (min-width: 320px) {
+  .mini\:visible {
+    visibility: visible;
+  }
+
+  .mini\:hidden {
+    display: none;
+  }
+
   .mini\:min-h-screen {
     min-height: 100vh;
   }
@@ -1513,7 +1529,17 @@ html::selection {
   }
 }
 
+@media (min-width: 425px) {
+  .hmin\:visible {
+    visibility: visible;
+  }
+}
+
 @media (min-width: 576px) {
+  .hp\:visible {
+    visibility: visible;
+  }
+
   .hp\:min-h-0 {
     min-height: 0px;
   }
@@ -1534,6 +1560,22 @@ html::selection {
 }
 
 @media (min-width: 640px) {
+  .sm\:visible {
+    visibility: visible;
+  }
+
+  .sm\:block {
+    display: block;
+  }
+
+  .sm\:flex {
+    display: flex;
+  }
+
+  .sm\:hidden {
+    display: none;
+  }
+
   .sm\:w-1\/2 {
     width: 50%;
   }
@@ -1557,6 +1599,10 @@ html::selection {
 }
 
 @media (min-width: 768px) {
+  .md\:visible {
+    visibility: visible;
+  }
+
   .md\:w-1\/2 {
     width: 50%;
   }
