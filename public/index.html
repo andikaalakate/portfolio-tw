@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +13,11 @@
         rel="stylesheet">
     <link rel="stylesheet" href="../dist/plugin/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../dist/css/style.css">
+    <script src="../dist/js/script.js"></script>
+    <link rel="stylesheet" href="../node_modules/aos/dist/aos.css">
+    <script src="../node_modules/aos/dist/aos.js"></script>
 </head>
+
 <body class="font-poppins">
     <!-- Header Section start -->
     <header class="absolute top-0 left-0 w-full flex items-center">
@@ -28,25 +33,32 @@
                         <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
                     </button>
 
-                    <nav id="nav-menu" class="hidden lg:block lg:static lg:bg-transparent lg:max-w-full absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:shadow-none lg:rounded-none lg:right-0 transition-all duration-500 ease-in-out">
+                    <nav id="nav-menu"
+                        class="hidden lg:block lg:static lg:bg-transparent lg:max-w-full absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:shadow-none lg:rounded-none lg:right-0 transition-all duration-500 ease-in-out">
                         <ul class="block lg:flex">
                             <li class="group">
-                                <a href="#home" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Beranda</a>
+                                <a href="#home"
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Beranda</a>
                             </li>
                             <li class="group">
-                                <a href="#about" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Tentang</a>
+                                <a href="#about"
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Tentang</a>
                             </li>
                             <li class="group">
-                                <a href="#portfolio" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Portfolio</a>
+                                <a href="#portfolio"
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Portfolio</a>
                             </li>
                             <li class="group">
-                                <a href="#clients" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Klien</a>
+                                <a href="#clients"
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Klien</a>
                             </li>
                             <li class="group">
-                                <a href="#blog" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Blog</a>
+                                <a href="#blog"
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Blog</a>
                             </li>
                             <li class="group">
-                                <a href="#contact" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Kontak</a>
+                                <a href="#contact"
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Kontak</a>
                             </li>
                         </ul>
                     </nav>
@@ -55,22 +67,30 @@
         </div>
     </header>
     <!-- Header Section end -->
-    
+
     <!-- Hero Section start -->
     <section id="home" class="pt-36 px-2 items-center">
-        <div class="container rounded-t-lg shadow-lg bg-gradient-to-br from-secondary to-primary">
+        <div class="container rounded-t-lg shadow-lg bg-gradient-to-br from-secondary to-primary mini:min-h-screen hp:min-h-0">
             <div class="flex flex-wrap">
                 <div class="w-full self-center p-4 sm:w-1/2 sm:pb-8 mini:pb-4 hp:w-full">
-                    <h1 class="text-base font-semibold text-primary md:text-xl hp:text-lg">Halo Semua 👋🏻, saya <span class="font-bold block text-dark_sec mt-1 sm:text-4xl hp:text-3xl mini:text-2xl font-firaSans selection:bg-secondary selection:text-slate-300 selection:underline">Andika Alakate</span></h1>
-                    <h2 class="font-medium text-dark_sec text-lg mb-5 lg:text-2xl font-firaCode">Web Developer & Content Creator</h2>
-                    <p class="font-medium text-slate-400 mb-10 leading-relaxed font-firaMono mix-blend-d"><span class="font-bold text-slate-300">Knowledge</span> can change one's destiny, and <span class="font-bold text-slate-300">diligence</span> will result in glory.</p>
+                    <h1 class="text-base font-semibold text-primary md:text-xl hp:text-lg">Halo Semua 👋🏻, saya <span
+                            class="font-bold block text-dark_sec mt-1 sm:text-4xl hp:text-3xl mini:text-2xl font-firaSans selection:bg-secondary selection:text-slate-300 selection:underline">Andika
+                            Alakate</span></h1>
+                    <h2 class="font-medium text-dark_sec text-lg mb-5 lg:text-2xl font-firaCode">Web Developer & Content
+                        Creator</h2>
+                    <p class="font-medium text-slate-400 mb-10 leading-relaxed font-firaMono mix-blend-d"><span
+                            class="font-bold text-slate-300">Knowledge</span> can change one's destiny, and <span
+                            class="font-bold text-slate-300">diligence</span> will result in glory.</p>
 
-                    <a href="#" class="text-sm font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-75 transition-all duration-500 ease-in-out mini:py-2 mini:px-5 self-start">Hubungi Saya</a>
+                    <a href="#"
+                        class="text-sm font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-75 transition-all duration-500 ease-in-out mini:py-2 mini:px-5 self-start">Hubungi
+                        Saya</a>
                 </div>
 
                 <div class="w-full self-center px-2 sm:w-1/2 hp:w-full">
                     <div class="mt-6 lg:mt-0 xl:-right-24 sm:pb-4 lg:self-end">
-                        <img src="../assets/img/andika-alakate-3.webp" alt="Andika Alakate" class="max-w-full rounded-3xl mx-auto drop-shadow-xl lg:max-w-sm xl:-right-24 lg:relative">
+                        <img src="../assets/img/andika-alakate-3.webp" alt="Andika Alakate"
+                            class="max-w-full rounded-3xl mx-auto drop-shadow-xl lg:max-w-sm xl:-right-24 lg:relative">
                     </div>
                 </div>
             </div>
@@ -85,25 +105,41 @@
                 <div class="w-full pt-10 px-4 mb-10 lg:w-1/2">
                     <h4 class="font-bold uppercase text-primary text-lg mb-3">Tentang Saya</h4>
                     <h2 class="font-bold text-dark text-3xl mb-5 max-w-md">Yuk, Belajar Web Programming di GADAK!</h2>
-                    <p class="font-medium text-base text-dark_sec max-w-xl">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae, fuga ipsum maxime tenetur modi quidem ut laudantium quas excepturi cum iure in repudiandae ipsa voluptas labore quasi nemo. Assumenda animi, culpa consequatur dolores commodi deleniti quia tempora, adipisci quis, esse ad temporibus harum voluptas quidem voluptatem aut a accusantium sint?</p>
+                    <p class="font-medium text-base text-dark_sec max-w-xl">Lorem ipsum dolor sit amet consectetur,
+                        adipisicing elit. Quae, fuga ipsum maxime tenetur modi quidem ut laudantium quas excepturi cum
+                        iure in repudiandae ipsa voluptas labore quasi nemo. Assumenda animi, culpa consequatur dolores
+                        commodi deleniti quia tempora, adipisci quis, esse ad temporibus harum voluptas quidem
+                        voluptatem aut a accusantium sint?</p>
                 </div>
                 <div class="w-full pb-4 px-4 lg:w-1/2 lg:pt-20">
                     <h3 class="font-medium text-dark text-2xl mb-5 max-w-md">Mari Berteman</h3>
-                    <p class="font-medium text-base text-dark_sec max-w-xl mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eligendi porro alias tempore eveniet adipisci repudiandae ipsa cum excepturi nemo?</p>
+                    <p class="font-medium text-base text-dark_sec max-w-xl mb-3">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Optio eligendi porro alias tempore eveniet adipisci repudiandae ipsa cum
+                        excepturi nemo?</p>
                     <div class="flex items-center">
-                        <a href="https://linkedin.com/in/andika-alakate/" class="w-9 h-9 mr-3 transition-all duration-500 text-slate-300 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white"><title>LinkedIn</title>
+                        <a href="https://linkedin.com/in/andika-alakate/"
+                            class="w-9 h-9 mr-3 transition-all duration-500 text-slate-300 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+                            <title>LinkedIn</title>
                             <i class="fa fa-linkedin-square" aria-hidden="true"></i>
                         </a>
-                        <a href="https://github.com/andikaalakate/" class="w-9 h-9 mr-3 transition-all duration-500 text-slate-300 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white"><title>GitHub</title>
+                        <a href="https://github.com/andikaalakate/"
+                            class="w-9 h-9 mr-3 transition-all duration-500 text-slate-300 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+                            <title>GitHub</title>
                             <i class="fa fa-github" aria-hidden="true"></i>
                         </a>
-                        <a href="https://www.youtube.com/@andikaalakate/" class="w-9 h-9 mr-3 transition-all duration-500 text-slate-300 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white"><title>YouTube</title>
+                        <a href="https://www.youtube.com/@andikaalakate/"
+                            class="w-9 h-9 mr-3 transition-all duration-500 text-slate-300 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+                            <title>YouTube</title>
                             <i class="fa fa-youtube-play" aria-hidden="true"></i>
                         </a>
-                        <a href="https://www.instagram.com/andika46710_/" class="w-9 h-9 mr-3 transition-all duration-500 text-slate-300 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white"><title>Instagram</title>
+                        <a href="https://www.instagram.com/andika46710_/"
+                            class="w-9 h-9 mr-3 transition-all duration-500 text-slate-300 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+                            <title>Instagram</title>
                             <i class="fa fa-instagram" aria-hidden="true"></i>
                         </a>
-                        <a href="hhttps://twitter.com/Andika46710_/" class="w-9 h-9 mr-3 transition-all duration-500 text-slate-300 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white"><title>Twitter</title>
+                        <a href="hhttps://twitter.com/Andika46710_/"
+                            class="w-9 h-9 mr-3 transition-all duration-500 text-slate-300 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+                            <title>Twitter</title>
                             <i class="fa fa-twitter" aria-hidden="true"></i>
                         </a>
                     </div>
@@ -115,57 +151,81 @@
 
     <!-- Portfolio Section start -->
     <section id="portfolio" class="px-1">
-        <div class="container bg-slate-100 shadow-lg py-16">
+        <div class="container bg-slate-100 shadow-lg py-16" data-aos="fade-up" data-aos-anchor-placement="top-center">
             <div class="w-full px-4 pb-4">
                 <div class="max-w-xl mx-auto text-center pt-8">
                     <h4 class="font-semibold text-lg text-primary mb-2">Portfolio</h4>
                     <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">Project Terbaru</h2>
-                    <p class="font-medium text-md text-dark_sec md:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque in rem veritatis non modi similique? Inventore tempora officiis explicabo natus.</p>
+                    <p class="font-medium text-md text-dark_sec md:text-lg">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Neque in rem veritatis non modi similique? Inventore tempora officiis
+                        explicabo natus.</p>
                 </div>
             </div>
 
             <div class="w-full px-4 flex flex-wrap justify-center">
-                <div class="mb-12 p-4 md:w-1/2">
-                    <div class="rounded-md shadow-md overflow-hidden">
-                        <img src="../assets/img/portfolio/pfl-1.webp" alt="Admin Dashboard" width="w-full" />
+                <div class="mb-12 p-4 md:w-1/2" data-aos="fade-up" data-aos-anchor-placement="top-center">
+                    <div class="rounded-md shadow-md overflow-hidden hover:scale-95 hover:border-4 transition duration-500 hover:border-primary hover:shadow-xl">
+                        <a href="#">
+                            <img src="../assets/img/portfolio/pfl-1.webp" alt="Admin Dashboard" width="w-full" class="object-cover hover:scale-110 transition duration-500"/>
+                        </a>
                     </div>
                     <h3 class="font-semibold text-xl mt-5 mb-3">Admin Dashboard - Andika Alakate</h3>
-                    <p class="font-medium text-base text-dark_sec">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente sunt excepturi, eveniet debitis aliquam sint.</p>
+                    <p class="font-medium text-base text-dark_sec">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Sapiente sunt excepturi, eveniet debitis aliquam sint.</p>
                 </div>
-                <div class="mb-12 p-4 md:w-1/2">
-                    <div class="rounded-md shadow-md overflow-hidden">
-                        <img src="../assets/img/portfolio/pfl-2.webp" alt="Sekolah" width="w-full" />
+                <div class="mb-12 p-4 md:w-1/2" data-aos="fade-up" data-aos-anchor-placement="top-center">
+                    <div class="rounded-md shadow-md overflow-hidden hover:scale-95 hover:border-4 transition duration-500 hover:border-primary hover:shadow-xl">
+                        <a href="#">
+                            <img src="../assets/img/portfolio/pfl-2.webp" alt="Sekolah" width="w-full" class="object-cover hover:scale-110 transition duration-500"/>
+                        </a>
                     </div>
-                    <h3 class="font-semibold text-xl mt-5 mb-3">Website Sekolah Jurusan Rekayasa Perangkat Lunak - Andika Alakate</h3>
-                    <p class="font-medium text-base text-dark_sec">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente sunt excepturi, eveniet debitis aliquam sint.</p>
+                    <h3 class="font-semibold text-xl mt-5 mb-3">Website Sekolah Jurusan Rekayasa Perangkat Lunak -
+                        Andika Alakate</h3>
+                    <p class="font-medium text-base text-dark_sec">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Sapiente sunt excepturi, eveniet debitis aliquam sint.</p>
                 </div>
-                <div class="mb-12 p-4 md:w-1/2">
-                    <div class="rounded-md shadow-md overflow-hidden">
-                        <img src="../assets/img/portfolio/pfl-3.webp" alt="Undangan Pernikahan" width="w-full" />
+                <div class="mb-12 p-4 md:w-1/2" data-aos="fade-up" data-aos-anchor-placement="top-center">
+                    <div class="rounded-md shadow-md overflow-hidden hover:scale-95 hover:border-4 transition duration-500 hover:border-primary hover:shadow-xl">
+                        <a href="#">
+                            <img src="../assets/img/portfolio/pfl-3.webp" alt="Undangan Pernikahan" width="w-full" class="object-cover hover:scale-110 transition duration-500"/>
+                        </a>
                     </div>
                     <h3 class="font-semibold text-xl mt-5 mb-3">Undangan Pernikahan - Andika Alakate</h3>
-                    <p class="font-medium text-base text-dark_sec">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente sunt excepturi, eveniet debitis aliquam sint.</p>
+                    <p class="font-medium text-base text-dark_sec">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Sapiente sunt excepturi, eveniet debitis aliquam sint.</p>
                 </div>
-                <div class="mb-12 p-4 md:w-1/2">
-                    <div class="rounded-md shadow-md overflow-hidden">
-                        <img src="../assets/img/portfolio/pfl-4.webp" alt="Kopi Kenangan" width="w-full" />
+                <div class="mb-12 p-4 md:w-1/2 group" data-aos="fade-up" data-aos-anchor-placement="top-center">
+                    <div
+                        class="rounded-md shadow-lg overflow-hidden hover:scale-95 hover:border-4 transition duration-500 hover:border-primary hover:shadow-xl peer">
+                        <a href="../kopi/">
+                            <img src="../assets/img/portfolio/pfl-4.webp" alt="Kopi Kenangan" width="w-full"
+                                class="object-cover hover:scale-110 transition duration-500" />
+                        </a>
                     </div>
-                    <h3 class="font-semibold text-xl mt-5 mb-3">Kopi Kenangan - Andika Alakate</h3>
-                    <p class="font-medium text-base text-dark_sec">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente sunt excepturi, eveniet debitis aliquam sint.</p>
+                    <h3 class="font-semibold text-xl mt-5 mb-3"><a href="../kopi/"
+                            class="hover:text-primary transition duration-500 peer-hover:text-primary">Kopi Kenangan - Andika Alakate</a></h3>
+                    <p class="font-medium text-base text-dark_sec">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Sapiente sunt excepturi, eveniet debitis aliquam sint.</p>
                 </div>
-                <div class="mb-12 p-4 md:w-1/2">
-                    <div class="rounded-md shadow-md overflow-hidden">
-                        <img src="../assets/img/portfolio/pfl-5.webp" alt="Web Novel" width="w-full" />
+                <div class="mb-12 p-4 md:w-1/2" data-aos="fade-up" data-aos-anchor-placement="top-center">
+                    <div class="rounded-md shadow-md overflow-hidden hover:scale-95 hover:border-4 transition duration-500 hover:border-primary hover:shadow-xl">
+                        <a href="#">
+                            <img src="../assets/img/portfolio/pfl-5.webp" alt="Web Novel" width="w-full" class="object-cover hover:scale-110 transition duration-500"/>
+                        </a>
                     </div>
                     <h3 class="font-semibold text-xl mt-5 mb-3">Web Novel Reading - Andika Alakate</h3>
-                    <p class="font-medium text-base text-dark_sec">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente sunt excepturi, eveniet debitis aliquam sint.</p>
+                    <p class="font-medium text-base text-dark_sec">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Sapiente sunt excepturi, eveniet debitis aliquam sint.</p>
                 </div>
-                <div class="mb-12 p-4 md:w-1/2">
-                    <div class="rounded-md shadow-md overflow-hidden">
-                        <img src="../assets/img/portfolio/pfl-6.webp" alt="Portfolio" width="w-full" />
+                <div class="mb-12 p-4 md:w-1/2" data-aos="fade-up" data-aos-anchor-placement="top-center">
+                    <div class="rounded-md shadow-md overflow-hidden hover:scale-95 hover:border-4 transition duration-500 hover:border-primary hover:shadow-xl">
+                        <a href="#">
+                            <img src="../assets/img/portfolio/pfl-6.webp" alt="Portfolio" width="w-full" class="object-cover hover:scale-110 transition duration-500"/>
+                        </a>
                     </div>
                     <h3 class="font-semibold text-xl mt-5 mb-3">Landing Page (Portfolio) - Andika Alakate</h3>
-                    <p class="font-medium text-base text-dark_sec">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente sunt excepturi, eveniet debitis aliquam sint.</p>
+                    <p class="font-medium text-base text-dark_sec">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Sapiente sunt excepturi, eveniet debitis aliquam sint.</p>
                 </div>
             </div>
         </div>
@@ -174,12 +234,15 @@
 
     <!-- Clients Section start -->
     <section id="clients" class="px-1">
-        <div class="container shadow-lg bg-slate-800 py-16">
+        <div class="container shadow-lg bg-slate-800 py-16" data-aos="zoom-in-up">
             <div class="w-full px-4 pb-4">
                 <div class="max-w-5xl mx-auto text-center pt-8">
                     <h4 class="font-semibold text-lg text-primary mb-2">Clients</h4>
-                    <h2 class="font-bold text-slate-200 text-3xl mb-4 sm:text-4xl lg:text-5xl">Yang Pernah Bekerjasama</h2>
-                    <p class="font-medium text-md text-dark_sec md:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque in rem veritatis non modi similique? Inventore tempora officiis explicabo natus.</p>
+                    <h2 class="font-bold text-slate-200 text-3xl mb-4 sm:text-4xl lg:text-5xl">Yang Pernah Bekerjasama
+                    </h2>
+                    <p class="font-medium text-md text-dark_sec md:text-lg">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Neque in rem veritatis non modi similique? Inventore tempora officiis
+                        explicabo natus.</p>
                 </div>
             </div>
 
@@ -197,69 +260,85 @@
 
     <!-- Blog Section start -->
     <section id="blog" class="px-1">
-        <div class="container rounded-b-lg bg-slate-100 shadow-lg py-16">
+        <div class="container rounded-b-lg bg-slate-100 shadow-lg py-16" data-aos="fade-up" data-aos-anchor-placement="top-center">
             <div class="w-full px-4 pb-4">
                 <div class="max-w-xl mx-auto text-center pt-8">
                     <h4 class="font-semibold text-lg text-primary mb-2">Blog</h4>
                     <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">Tulisan Terkini</h2>
-                    <p class="font-medium text-md text-dark_sec md:text-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. A est molestiae dolor nulla!</p>
+                    <p class="font-medium text-md text-dark_sec md:text-lg">Lorem ipsum, dolor sit amet consectetur
+                        adipisicing elit. A est molestiae dolor nulla!</p>
                 </div>
             </div>
-        
+
             <div class="flex p-4 flex-wrap mx-auto flex-1 gap-6 justify-center">
-                <div class="max-w-full sm:w-full md:max-w-2xl lg:max-w-md xl:w-1/4 bg-white shadow-lg rounded-xl">
+                <div class="max-w-full sm:w-full md:max-w-2xl lg:max-w-md xl:w-1/4 bg-white shadow-lg rounded-xl" data-aos="fade-up" data-aos-anchor-placement="top-center">
                     <div class="rounded-t-xl shadow-md overflow-hidden">
                         <img src="../assets/img/portfolio/pfl-1.webp" alt="Admin Dashboard" width="w-full" />
                     </div>
                     <div class="w-full py-8 px-6">
                         <h3 class="font-semibold text-xl mb-3">Admin Dashboard - Andika Alakate</h3>
-                        <p class="font-medium text-base text-dark_sec pb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        <p class="font-medium text-base text-dark_sec pb-4">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit.
                             Sapiente sunt excepturi, eveniet debitis aliquam sint.</p>
-                        <a href="#" class="text-sm font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-75 transition-all duration-500 ease-in-out mini:py-2 mini:px-5 self-start hover:underline">Baca Selengkapnya ...</a>
+                        <a href="#"
+                            class="text-sm font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-75 transition-all duration-500 ease-in-out mini:py-2 mini:px-5 self-start hover:underline">Baca
+                            Selengkapnya ...</a>
                     </div>
                 </div>
-                <div class="max-w-full sm:w-full md:max-w-2xl lg:max-w-md xl:w-1/4 bg-white shadow-lg rounded-xl">
+                <div class="max-w-full sm:w-full md:max-w-2xl lg:max-w-md xl:w-1/4 bg-white shadow-lg rounded-xl" data-aos="fade-up" data-aos-anchor-placement="top-center">
                     <div class="rounded-t-xl shadow-md overflow-hidden">
                         <img src="../assets/img/portfolio/pfl-1.webp" alt="Admin Dashboard" width="w-full" />
                     </div>
                     <div class="w-full py-8 px-6">
                         <h3 class="font-semibold text-xl mb-3">Admin Dashboard - Andika Alakate</h3>
-                        <p class="font-medium text-base text-dark_sec pb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        <p class="font-medium text-base text-dark_sec pb-4">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit.
                             Sapiente sunt excepturi, eveniet debitis aliquam sint.</p>
-                        <a href="#" class="text-sm font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-75 transition-all duration-500 ease-in-out mini:py-2 mini:px-5 self-start hover:underline">Baca Selengkapnya ...</a>
+                        <a href="#"
+                            class="text-sm font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-75 transition-all duration-500 ease-in-out mini:py-2 mini:px-5 self-start hover:underline">Baca
+                            Selengkapnya ...</a>
                     </div>
                 </div>
-                <div class="max-w-full sm:w-full md:max-w-2xl lg:max-w-md xl:w-1/4 bg-white shadow-lg rounded-xl">
+                <div class="max-w-full sm:w-full md:max-w-2xl lg:max-w-md xl:w-1/4 bg-white shadow-lg rounded-xl" data-aos="fade-up" data-aos-anchor-placement="top-center">
                     <div class="rounded-t-xl shadow-md overflow-hidden">
                         <img src="../assets/img/portfolio/pfl-1.webp" alt="Admin Dashboard" width="w-full" />
                     </div>
                     <div class="w-full py-8 px-6">
                         <h3 class="font-semibold text-xl mb-3">Admin Dashboard - Andika Alakate</h3>
-                        <p class="font-medium text-base text-dark_sec pb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        <p class="font-medium text-base text-dark_sec pb-4">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit.
                             Sapiente sunt excepturi, eveniet debitis aliquam sint.</p>
-                        <a href="#" class="text-sm font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-75 transition-all duration-500 ease-in-out mini:py-2 mini:px-5 self-start hover:underline">Baca Selengkapnya ...</a>
+                        <a href="#"
+                            class="text-sm font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-75 transition-all duration-500 ease-in-out mini:py-2 mini:px-5 self-start hover:underline">Baca
+                            Selengkapnya ...</a>
                     </div>
                 </div>
-                <div class="max-w-full sm:w-full md:max-w-2xl lg:max-w-md xl:w-1/4 bg-white shadow-lg rounded-xl">
+                <div class="max-w-full sm:w-full md:max-w-2xl lg:max-w-md xl:w-1/4 bg-white shadow-lg rounded-xl" data-aos="fade-up" data-aos-anchor-placement="top-center">
                     <div class="rounded-t-xl shadow-md overflow-hidden">
                         <img src="../assets/img/portfolio/pfl-1.webp" alt="Admin Dashboard" width="w-full" />
                     </div>
                     <div class="w-full py-8 px-6">
                         <h3 class="font-semibold text-xl mb-3">Admin Dashboard - Andika Alakate</h3>
-                        <p class="font-medium text-base text-dark_sec pb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        <p class="font-medium text-base text-dark_sec pb-4">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit.
                             Sapiente sunt excepturi, eveniet debitis aliquam sint.</p>
-                        <a href="#" class="text-sm font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-75 transition-all duration-500 ease-in-out mini:py-2 mini:px-5 self-start hover:underline">Baca Selengkapnya ...</a>
+                        <a href="#"
+                            class="text-sm font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-75 transition-all duration-500 ease-in-out mini:py-2 mini:px-5 self-start hover:underline">Baca
+                            Selengkapnya ...</a>
                     </div>
                 </div>
-                <div class="max-w-full sm:w-full md:max-w-2xl lg:max-w-md xl:w-1/4 bg-white shadow-lg rounded-xl">
+                <div class="max-w-full sm:w-full md:max-w-2xl lg:max-w-md xl:w-1/4 bg-white shadow-lg rounded-xl" data-aos="fade-up" data-aos-anchor-placement="top-center">
                     <div class="rounded-t-xl shadow-md overflow-hidden">
                         <img src="../assets/img/portfolio/pfl-1.webp" alt="Admin Dashboard" width="w-full" />
                     </div>
                     <div class="w-full py-8 px-6">
                         <h3 class="font-semibold text-xl mb-3">Admin Dashboard - Andika Alakate</h3>
-                        <p class="font-medium text-base text-dark_sec pb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        <p class="font-medium text-base text-dark_sec pb-4">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit.
                             Sapiente sunt excepturi, eveniet debitis aliquam sint.</p>
-                        <a href="#" class="text-sm font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-75 transition-all duration-500 ease-in-out mini:py-2 mini:px-5 self-start hover:underline">Baca Selengkapnya ...</a>
+                        <a href="#"
+                            class="text-sm font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-75 transition-all duration-500 ease-in-out mini:py-2 mini:px-5 self-start hover:underline">Baca
+                            Selengkapnya ...</a>
                     </div>
                 </div>
             </div>
@@ -275,28 +354,33 @@
                     <h4 class="font-semibold text-lg text-primary mb-2">Kontak</h4>
                     <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">Hubungi Kami</h2>
                     <p class="font-medium text-md text-dark_sec md:text-lg">Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Neque in rem veritatis non modi similique? Inventore tempora officiis explicabo
+                        adipisicing elit. Neque in rem veritatis non modi similique? Inventore tempora officiis
+                        explicabo
                         natus.</p>
                 </div>
             </div>
-    
+
             <form>
                 <div class="w-full lg:w-2/3 lg:mx-auto">
                     <div class="w-full px-4 pb-8">
                         <label for="name" class="text-base font-bold text-primary">Nama</label>
-                        <input type="text" id="name" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary"> 
+                        <input type="text" id="name"
+                            class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary">
                     </div>
                     <div class="w-full px-4 pb-8">
                         <label for="email" class="text-base font-bold text-primary">Email</label>
-                        <input type="email" id="email" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary"> 
+                        <input type="email" id="email"
+                            class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary">
                     </div>
                     <div class="w-full px-4 pb-4">
                         <label for="pesan" class="text-base font-bold text-primary">Pesan</label>
-                        <textarea id="pesan" class="w-full bg-slate-200 text-dark rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-32">
+                        <textarea id="pesan"
+                            class="w-full bg-slate-200 text-dark rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-32">
                         </textarea>
                     </div>
                     <div class="w-full px-4 pb-8">
-                        <button class="text-sm font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-75 transition-all duration-500 ease-in-out mini:py-2 mini:px-5">
+                        <button
+                            class="text-sm font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-75 transition-all duration-500 ease-in-out mini:py-2 mini:px-5">
                             Hubungi Saya
                         </button>
                     </div>
@@ -384,12 +468,23 @@
                         <i class="fa fa-twitter" aria-hidden="true"></i>
                     </a>
                 </div>
-                <p class="font-medium text-xs text-slate-500 text-center">Dibuat dengan <span class="text-pink-500">❤️</span>, oleh <a href="https://github.com/andikaalakate/" target="_blank" class="font-bold text-primary">Andika Alakate</a>, menggunakan <a href="https://tailwindcss.com" class="text-transparent font-bold bg-gradient-to-br from-blue-400 to-green-300 bg-clip-text">TailwindCSS</a>.</p>
+                <p class="font-medium text-xs text-slate-500 text-center">Dibuat dengan <span
+                        class="text-pink-500">❤️</span>, oleh <a href="https://github.com/andikaalakate/"
+                        target="_blank" class="font-bold text-primary">Andika Alakate</a>, menggunakan <a
+                        href="https://tailwindcss.com"
+                        class="text-transparent font-bold bg-gradient-to-br from-blue-400 to-green-300 bg-clip-text">TailwindCSS</a>.
+                </p>
             </div>
         </div>
     </footer>
     <!-- Footer end -->
 
-    <script src="../dist/js/script.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000
+        });
+    </script>
+
 </body>
+
 </html>
