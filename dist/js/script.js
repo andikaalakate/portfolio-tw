@@ -2,11 +2,16 @@
 window.onscroll = function() {
     const header = document.querySelector('header');
     const fixedNav = header.offsetTop;
+    const toTop = document.querySelector('#to-top');
 
     if(window.pageYOffset > fixedNav) {
         header.classList.add('navbar-fixed');
+        toTop.classList.remove('hidden');
+        toTop.classList.add('flex')
     } else {
         header.classList.remove('navbar-fixed');
+        toTop.classList.remove('flex');
+        toTop.classList.add('hidden');
     }
 };
 
@@ -18,6 +23,14 @@ Hamburger.addEventListener('click', function(){
     Hamburger.classList.toggle('hamburger-active');
     navMenu.classList.toggle('hidden');
 });
+
+// Di luar Hamburger
+window.addEventListener('click', function(e){
+    if(e.target != Hamburger && e.target != navMenu) {
+        Hamburger.classList.remove('hamburger-active');
+        navMenu.classList.add('hidden');
+    }
+})
 
 document.addEventListener('DOMContentLoaded', function () {
     const texts = ['Programmer.', 'Web Developer.', 'Game Developer.', 'Photographer'];
@@ -47,18 +60,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
 const animatedText = document.getElementById('animatedText');
 
-// Function to add new animation after zoomInRight animation finishes
 function addNewAnimation() {
     animatedText.classList.remove('animate__zoomInRight');
 
-    // Reset the animation after 5 seconds
     setTimeout(() => {
         animatedText.classList.remove('animate__pulse');
-        void animatedText.offsetWidth; // Trigger reflow to restart the animation
+        void animatedText.offsetWidth;
         animatedText.classList.add('animate__pulse');
     }, 5000);
 }
 
-// Event listener to detect when zoomInRight animation finishes
 animatedText.addEventListener('animationend', addNewAnimation);
 
